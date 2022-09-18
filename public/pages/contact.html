@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&amp;display=swap">
+</head>
+
+<body>
+  <div class="main-header" id="main-header">
+    <a href="#" class="logo"><img src="../image/logo-white.png" alt=""></a>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="../pages/contact.html">Contact Us</a></li>
+      <li><a href="#" id="link-change-language">日本</a></li>
+      <li><button id="btn-menu" class="btn-menu"></button></li>
+    </ul>
+  </div>
+  <div class="box">
+    <h2>Contact Us</h2>
+    <p>Thank for your interest in Titan. Please fill out the form to tell us about your area of needs. Our
+      representative will contact you shortly.</p>
+
+    <form name="contactForm" onsubmit="return onSubmitContactForm()" class="contact-form">
+      <ul>
+        <li>
+          <label for="contactName">Name (*)</label>
+          <input type="text" name="contactName" id="contactName" placeholder="Name (*)" />
+        </li>
+        <li>
+          <label for="contactEmail">Email (*)</label>
+          <input type="text" name="contactEmail" id="contactEmail" placeholder="Email (*)" />
+        </li>
+        <li>
+          <label for="contactPhone">Phone</label>
+          <input type="number" name="contactPhone" placeholder="Phone" />
+        </li>
+        <li>
+          <label for="contactSubject">Subject (*)</label>
+          <input type="text" name="contactSubject" placeholder="Subject (*)" />
+        </li>
+        <li>
+          <label for="contactDescription">Desciption (*)</label>
+          <textarea name="contactDescription" rows="4" placeholder="Description (*)"></textarea>
+        </li>
+        <li>
+          <input id="btnSubmitContact" type="submit" class="request-button" value="Request Now" />
+        </li>
+      </ul>
+    </form>
+  </div>
+
+  <script src="../JS/form.js"></script>
+</body>
+
+</html>
