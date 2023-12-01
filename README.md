@@ -1,71 +1,39 @@
-![image](https://github.com/phuccoder2000/webtitan/assets/62839458/e61d333e-f188-4fac-92bf-e28c21364596)# Dự Án Quiz
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### Trang đăng ký
+# Dự Án Quiz
+## Mô tả dự án
+- Admin: được phép tạo các câu hỏi với mức độ khác nhau.
+- User: được phép truy cập vào hệ thống được tham vào bài kiểm tra của Quiz
+## Setup môi trường
+- Chạy docker 
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/3884e2f6-4ee3-42d1-87b8-84b4349eac7d)
+- Chạy DBeaver quản lý cơ sở dữ liệu
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/acd886e2-f01f-4bd9-8af9-dcde7664f6da)
+- Chạy postman làm việc với API
+  ![image](https://github.com/phuccoder2000/webtitan/assets/62839458/48510280-dd4b-4e78-9874-b3d4716c5186)
+### Demo Dự án
+#### Trang đăng ký
 ![image](https://github.com/phuccoder2000/webtitan/assets/62839458/7f5871d0-4d62-45cc-969d-20846f65b79a)
+#### Trang đăng nhập
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/b86677a3-51f0-4ec7-92fa-1c97c7c0f82f)
+#### trang home
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/3bb5f37d-fad7-475f-9226-679b9fe84a3b)
+### trang admin
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/d47d7714-7308-4204-9642-207b804b1a80)
+#### trang quản lí user 
+- trang này cho quản lí người dùng (CRUD)
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/5fe85a85-7c13-4fdb-9719-cfb58bede471)
+#### Trang quản lí bài Quiz
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/1075671d-6341-4e30-a672-e9eb2a75e79c)
+##### thêm bài quiz mới
+- cho phép thêm bài quiz với nhiều mức độ khac nhau
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/ebb81179-9e68-4607-a520-de301f50c429)
+##### Update bài quiz
+- cho phép chọn câu hỏi cần update và thêm xóa sửa câu hỏi và câu trả lời  cho bài quiz đó
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/f2a91bf9-a997-4385-8963-15c5590df7f5)
+##### Gán bài quiz cho User 
+- cho phép gán bài quiz cho User
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/b367c800-2f49-4e35-b870-2056037a13e7)
+#### Trang quản lí câu hỏi
+- cho phép thêm mới câu hỏi và câu trả lời cho bài quiz nào 
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/d48e2fc2-86ab-46e8-aaee-3253f82f673b)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
