@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/e61d333e-f188-4fac-92bf-e28c21364596)# Dự Án Quiz
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -6,7 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### Trang đăng ký
+![image](https://github.com/phuccoder2000/webtitan/assets/62839458/7f5871d0-4d62-45cc-969d-20846f65b79a)
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
