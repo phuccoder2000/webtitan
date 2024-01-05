@@ -5,7 +5,7 @@ export default class Innovations extends React.Component {
         return (
             <div>
                 <div className="box box-2">
-                    <h2>INNOVATIONS</h2>
+                    <h2><a>INNOVATIONS</a> </h2>
                     <div className="items">
                         <div className="item">
                             <img src={innovation} alt="#" />

@@ -4,7 +4,6 @@ import React from "react";
 import Footer from "./Component/Footer"
 import Header from "./Component/Header"
 import TopSlider from "./Component/Slider"
-import SubSlider from "./Component/SubSlider";
 import OurClients from "./Component/OurClients";
 import Weprovide from "./Component/Weprovide";
 import Innovations from "./Component/Innovations";
@@ -15,6 +14,8 @@ import LatestJobs from "./Component/LatestJobs";
 import Blogs from "./Component/Blogs";
 import FooterTop from './Component/FooterTop'
 import LoginModal from './pages/login'
+import From from './Component/From';
+
 
 
 class App extends React.Component {
@@ -45,7 +46,6 @@ class App extends React.Component {
         <Header renderLogin={this.renderLogin}/>
         <TopSlider/>
         <Weprovide />
-        <SubSlider />
         <Innovations />
         <EngagementModels />
         <OurClients />
@@ -53,9 +53,11 @@ class App extends React.Component {
         <AsRecognizedBy />
         <LatestJobs />
         <Blogs />
+        <From />
         <FooterTop />
         <LoginModal renderLogin={renderPage === 'login'} handleCloseModal={this.handleCloseModal} />
         <Footer />
+      
       </div>
     );
   }

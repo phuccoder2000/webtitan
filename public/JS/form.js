@@ -30,3 +30,4 @@ function onSubmitContactForm (e) {
 
     return isFormValid
 }
+export default Frorm;

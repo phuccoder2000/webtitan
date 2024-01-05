@@ -27,10 +27,10 @@ export default class Header extends React.Component {
                     </a>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a className='home' href="#">Home</a>
                         </li>
                         <li>
-                            <a href="./pages/contact.html">Contact Us</a>
+                            <a className='contact' href="./pages/contact.html">Contact Us</a>
                         </li>
                         <li>
                             <a href="#" onClick={this.props.renderLogin}>Login</a>

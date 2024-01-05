@@ -18,28 +18,6 @@ export default class TopSlider extends React.Component {
       topSlider.style.width = topSliderItemWidth * topSliderItemCount + "px"
     }
   }
-  backTopSlider(topSliderItemWidth, topSliderItemCount) {
-    if (this.currentTopSliderItem === 1) {
-      this.currentTopSliderItem = topSliderItemCount
-      topSliderItemWidth = document.getElementsByClassName("slide-item")[this.currentTopSliderItem - 1].clientWidth
-    } else {
-      topSliderItemWidth = document.getElementsByClassName("slide-item")[this.currentTopSliderItem - 1].clientWidth
-      this.currentTopSliderItem--
-    }
-    let leftPosition = (this.currentTopSliderItem - 1) * topSliderItemWidth
-    let sliderElement = document.getElementById("top-slider")
-    if (sliderElement) {
-      if (this.currentTopSliderItem === 1) {
-        sliderElement.style.left = "0"
-      } else {
-        sliderElement.style.left = "-" + leftPosition + "px"
-      }
-    }
-    let pagingElement = document.getElementById("slider-paging")
-    if (pagingElement) {
-      pagingElement.innerHTML = this.currentTopSliderItem + "/" + topSliderItemCount
-    }
-  }
   nextTopSlider(topSliderItemWidth, topSliderItemCount) {
     if (this.currentTopSliderItem === topSliderItemCount) {
       this.currentTopSliderItem = 1
@@ -62,6 +40,29 @@ export default class TopSlider extends React.Component {
       pagingElement.innerHTML = this.currentTopSliderItem + "/" + topSliderItemCount
     }
   }
+  backTopSlider(topSliderItemWidth, topSliderItemCount) {
+    if (this.currentTopSliderItem === 1) {
+      this.currentTopSliderItem = topSliderItemCount
+      topSliderItemWidth = document.getElementsByClassName("slide-item")[this.currentTopSliderItem - 1].clientWidth
+    } else {
+      topSliderItemWidth = document.getElementsByClassName("slide-item")[this.currentTopSliderItem - 1].clientWidth
+      this.currentTopSliderItem--
+    }
+    let leftPosition = (this.currentTopSliderItem - 1) * topSliderItemWidth
+    let sliderElement = document.getElementById("top-slider")
+    if (sliderElement) {
+      if (this.currentTopSliderItem === 1) {
+        sliderElement.style.left = "0"
+      } else {
+        sliderElement.style.left = "-" + leftPosition + "px"
+      }
+    }
+    let pagingElement = document.getElementById("slider-paging")
+    if (pagingElement) {
+      pagingElement.innerHTML = this.currentTopSliderItem + "/" + topSliderItemCount
+    }
+  }
+  
   componentDidMount() {
     window.addEventListener("load", this.loadTopSlider(this.topSliderItemWidth, this.topSliderItemCount))
   }
@@ -77,7 +78,7 @@ export default class TopSlider extends React.Component {
               <div className="slide-item item1">
                 <div className="slide-content">
                   <h2>INSPIRE YOUR WORK</h2>
-                  <p>Founded on trust and experience, by a professional team, with a big vision and mission to provide the best services to our clients.</p>
+                  <p>Founded on trust and experience, by a professional team, with a <br></br> big vision and mission to provide the best services to our clients.</p>
                 </div>
               </div>
               <div className="slide-item item2">
@@ -102,11 +103,11 @@ export default class TopSlider extends React.Component {
             <div className="slider-actions">
               <button className="btn-previus" onClick={() => {
                 this.backTopSlider(this.topSliderItemWidth, this.topSliderItemCount)
-              }}><img src={Back} /></button>
+              }}><img src={Back} alt='Back'/></button>
               <span id="slider-paging">1/4</span>
               <button className="btn-next" onClick={() => {
                 this.nextTopSlider(this.topSliderItemWidth, this.topSliderItemCount)
-              }}><img src={Next} /></button>
+              }}><img src={Next} alt ='Next' /></button>
             </div>
           </div>
         </header>

@@ -4,7 +4,7 @@ import talk from '../data/image/icons/talk-with-us.svg'
 import chat from '../data/image/icons/chat-with-us.svg'
 function Footerct() {
     return (
-        <div className="boxbox box-1">
+        <div className="box-3 box-1">
             <div className="items-ft">
                 <div className="item">
                     <h3>Headquarters:</h3>
@@ -12,7 +12,10 @@ function Footerct() {
                     <p className="sdt" href="#">Tel: +84-28-3997-7233</p>
                     <div className="item-icon">
                         <h3>General Inquiries:</h3>
-                        <a><img src={email} alt="email" /> info@titancorpvn.com</a> <br />
+                        <li>
+                            <img src={email} alt="email" />
+                            <a> info@titancorpvn.com</a>
+                        </li>
                         <a><img src={spyke} alt="spyke" /> titancorpvn</a>
                     </div>
                 </div>
@@ -22,8 +25,15 @@ function Footerct() {
                     <p className="sdt" href="#">Tel: +84-28-3997-7233</p>
                     <div className="item-icon">
                         <h3>Sales & Support:</h3>
-                        <a><img src={email} alt="email" /> sales@titancorpvn.com</a> <br />
-                        <a><img src={email} alt="email" /> support@titancorpvn.com</a>
+                        <li>
+                            <img src={email} alt="email" />
+                            <p> sales@titancorpvn.com</p>
+                        </li>
+                        <li>
+                            <img src={email} alt="email" />
+                            <p> support@titancorpvn.com</p>
+                        </li>
+
                     </div>
                 </div>
                 <div className="item">
